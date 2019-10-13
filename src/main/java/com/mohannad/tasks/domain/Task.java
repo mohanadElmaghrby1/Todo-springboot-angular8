@@ -13,13 +13,13 @@ import java.time.LocalDate;
  */
 @Entity
 public class Task {
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue
     private Long id;
     private String name;
-    @JsonFormat(pattern = "mm/dd/yyyy")
+    @JsonFormat(pattern = "MM/dd/yyyy")
     private LocalDate dueDate;
-    private Boolean completed ;
+    private Boolean completed;
+
 
     public Task(String name, LocalDate dueDate, Boolean completed) {
         this.name = name;
