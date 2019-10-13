@@ -20,9 +20,11 @@ public class TasksApplication {
     @Bean
     CommandLineRunner runner(TaskService taskService){
         return args -> {
-          taskService.save(new Task("create spring boot app" , LocalDate.now() , true));
-          taskService.save(new Task("create spring boot angular" , LocalDate.now().plus(1,ChronoUnit.DAYS) , false));
-          taskService.save(new Task("angular course" , LocalDate.now().plus(2,ChronoUnit.DAYS) , false));
+            taskService.save( new Task("Create Spring Boot Application", LocalDate.now(), true) );
+            taskService.save( new Task("Create Spring Project Packages", LocalDate.now().plus(1,ChronoUnit.DAYS), false) );
+            taskService.save( new Task("Create the Task Domain Class", LocalDate.now().plus(3,ChronoUnit.DAYS), false) );
+            taskService.save( new Task("Create service and repository classes", LocalDate.now().plus(5,ChronoUnit.DAYS), false) );
+            taskService.save( new Task("Create the command line runner to load data", LocalDate.now().plus(8, ChronoUnit.DAYS), false) );
         };
     }
 }
