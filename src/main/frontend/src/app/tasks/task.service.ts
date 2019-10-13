@@ -14,6 +14,6 @@ export class TaskService {
 
   saveTask(task :Task , completed : boolean){
     task.completed=completed;
-    return this.http.post('/api/save' , task);
+    return this.http.post('/api/tasks/save' , task);
   }
 }
