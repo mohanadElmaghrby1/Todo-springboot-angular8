@@ -5,6 +5,7 @@ import {Task} from "./task,model";
 @Injectable()
 export class TaskService {
 
+  // Add EventEmitter for connect tass-add to task0list
   onTaskAdded = new EventEmitter<Task>()
 
   constructor(private http:HttpClient){
