@@ -12,16 +12,17 @@ export class TaskService {
   }
 
   getTasks( ){
-    return this.http.get('/api/tasks');
+    let api = this.http.get('http://localhost:8080/api/tasks');
+    return api;
   }
 
   saveTask(task :Task , completed : boolean){
     task.completed=completed;
-    return this.http.post('/api/tasks/save' , task);
+    return this.http.post('http://localhost:8080/api/tasks/save' , task);
   }
 
   addTask(task :Task){
     console.log("create new task " +task.name );
-    return this.http.post('/api/tasks/save' , task);
+    return this.http.post('http://localhost:8080/api/tasks/save' , task);
   }
 }

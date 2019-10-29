@@ -9,13 +9,17 @@ import { TasksListComponent } from './tasks/tasks-list/tasks-list.component';
 import {TaskService} from "./tasks/task.service";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TasksComponent,
     TasksAddComponent,
-    TasksListComponent
+    TasksListComponent,
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

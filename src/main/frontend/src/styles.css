@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 h1 {
-  color: seagreen;
+  color: #8b7e6f;
 }
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: antiquewhite;
 }

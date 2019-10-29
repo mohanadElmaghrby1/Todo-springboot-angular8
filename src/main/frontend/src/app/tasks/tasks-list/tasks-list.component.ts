@@ -21,9 +21,9 @@ export class TasksListComponent implements OnInit {
       },
       (error) => console.log(error)
     );
-    // this.tasks.push(new Task(1, "task1", false, "07/08/2019"))
-    // this.tasks.push(new Task(2, "task2", true, "07/08/2020"))
-    // this.tasks.push(new Task(3, "task3", true, "07/08/2021"))
+    // this.tasks.push(new Task( "task1", false, "07/08/2019"))
+    // this.tasks.push(new Task( "task2", true, "07/08/2020"))
+    // this.tasks.push(new Task( "task3", true, "07/08/2021"))
     //subscribe onTaskAdded Emitter
     this.taskService.onTaskAdded.subscribe(
       (task : Task)=>this.tasks.push(task)
